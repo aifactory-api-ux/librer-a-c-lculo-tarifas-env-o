@@ -1,0 +1,52 @@
+{
+  "enums": {
+    "TARIFAS": ["A", "B", "C"]
+  },
+  "exports": {
+    "src/shipping.py": [
+      "VOLUMETRIC_DIVISOR",
+      "WEIGHT_STEP_KG",
+      "MAX_WEIGHT_KG",
+      "VOLUME_QUANTUM",
+      "WEIGHT_QUANTUM",
+      "MONEY_QUANTUM",
+      "EXPRESS_MULTIPLIER",
+      "TARIFAS",
+      "volumetric_weight",
+      "billable_weight",
+      "shipping_cost"
+    ],
+    "tests/test_shipping.py": [
+      "test_volumetric_weight_ejemplo_normativo_30x20x10",
+      "test_volumetric_weight_acepta_entradas_decimal",
+      "test_volumetric_weight_redondea_a_dos_decimales_half_up",
+      "test_volumetric_weight_no_ajusta_digitos_inferiores",
+      "test_volumetric_weight_rechaza_tipos_no_admitidos",
+      "test_volumetric_weight_rechaza_medidas_no_positivas",
+      "test_billable_weight_conserva_el_multiplo_exacto",
+      "test_billable_weight_redondea_hacia_arriba_desde_2_01",
+      "test_billable_weight_redondea_hacia_arriba_desde_2_49",
+      "test_billable_weight_toma_el_peso_mayor",
+      "test_billable_weight_toma_el_peso_real_cuando_es_mayor",
+      "test_billable_weight_admite_exactamente_30_kg",
+      "test_billable_weight_rechaza_peso_real_superior_a_30_kg",
+      "test_billable_weight_rechaza_peso_facturable_superior_a_30_kg",
+      "test_billable_weight_rechaza_tipos_no_admitidos",
+      "test_billable_weight_rechaza_peso_no_positivo",
+      "test_shipping_cost_ejemplo_normativo_zona_b",
+      "test_shipping_cost_ejemplo_normativo_express",
+      "test_shipping_cost_ejemplo_normativo_zona_a",
+      "test_shipping_cost_aplica_la_tarifa_de_cada_zona",
+      "test_shipping_cost_sin_express_equivale_a_express_falso",
+      "test_shipping_cost_express_multiplica_el_total_por_1_5",
+      "test_shipping_cost_rechaza_zonas_no_validas",
+      "test_shipping_cost_rechaza_express_no_booleano",
+      "test_shipping_cost_rechaza_tipos_no_admitidos_en_peso",
+      "test_shipping_cost_rechaza_tipos_no_admitidos_en_medidas",
+      "test_shipping_cost_rechaza_peso_no_positivo",
+      "test_shipping_cost_rechaza_peso_superior_a_30_kg"
+    ],
+    "README.md": [],
+    "END_TO_END_REPORT.md": []
+  }
+}

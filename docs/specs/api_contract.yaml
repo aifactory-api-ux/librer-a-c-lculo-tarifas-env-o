@@ -1,0 +1,13 @@
+```yaml
+openapi: 3.1.0
+info:
+  title: shipping (pure-function Python library — no HTTP API)
+  version: 0.0.0
+  description: |
+    SPEC.md §0 declares that this project is a small, dependency-free Python
+    library with no web service and no HTTP API. Accordingly this contract
+    declares zero endpoints. The public surface is the module
+    src/shipping.py with volumetric_weight, billable_weight, and shipping_cost,
+    which are not HTTP resources.
+paths: {}
+```
